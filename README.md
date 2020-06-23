@@ -1,2 +1,2 @@
 # brian
-Backend tutorial for brian
+Fullstack tutorial for Brian
