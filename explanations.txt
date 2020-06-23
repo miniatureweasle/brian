@@ -1,0 +1,60 @@
+Relational Model
+
+defines data and how it interacts
+
+
+Summary:
+- foreign keys
+- text
+- integer
+- etc
+
+Hike(
+    name: text,
+    popularity: integer
+    location: FK
+)
+
+Location(
+    id,
+    name
+)
+
+
+
+One Way To Visualize The Relational Model
+
+Hike
+
+id, name, location 
+1, Table Mountain Easy Hike, 
+2, Cape Point Trail, 2
+
+
+Location
+id, name, 
+1, Cape Valley, 
+2, Table Mountain,
+3, City Center
+
+
+Django Commands
+
+
+Pipenv shell (a program you must install)
+ This creates a virtual python enviornament just in the directory which you call the command
+ A virtual environament is like a mini python installation within that directory
+ The reason you do this is so that you can install any published python programs (eg, django, django rest framework)
+ easily.
+ You can also run many python applications independently with different packages using this method
+
+
+python manage.py startproject hike_service
+This creates the django project and sets up the inital directories
+
+
+python manage.py createapp core
+Django has a concept of apps which descripe certain funcitons of your appplication
+You create this to make it easier to maintain
+
+
