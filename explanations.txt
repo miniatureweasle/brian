@@ -4,7 +4,7 @@ defines data and how it interacts
 
 
 Summary:
-- foreign keys
+- foreign keys (is a foreign key the single unique field ie ID?)
 - text
 - integer
 - etc
@@ -12,7 +12,7 @@ Summary:
 Hike(
     name: text,
     popularity: integer
-    location: FK
+    location: Foreign Key
 )
 
 Location(
