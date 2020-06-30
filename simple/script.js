@@ -6,18 +6,20 @@ var starQuantity = 10;
 
 //defining canvas 
 const canvas =  document.getElementById("starryNight");
-canvas.style.backgroundColor = "MidnightBlue";
+canvas.style.backgroundColor = "black";
 const ctx = canvas.getContext("2d");
 
 //window.innerWidth/Height sets the canvas element to full the intire size of the page.
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = width;
+canvas.height = height;
 
 //styling stars
-var starGlow = ctx.createRadialGradient(75, 50, 5, 90, 60, 100)
+var starGlow = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
 starGlow.addColorStop(0, "white");
-starGlow.addColorStop(1, "gold");
+// starGlow.addColorStop(1, "gold");
+
+
 
 function star(ctx, x, y, r, p, m)
 {
@@ -67,7 +69,7 @@ while(starQuantity != 0){
     ctx.beginPath();
    // ctx.arc(yrandom, xrandom, 3, 0, 2 * Math.PI, false);
    star(ctx,boxValueX, boxValueY,9,5,0.5)
-    ctx.fillStyle = "gold";
+    ctx.fillStyle = "white";
     ctx.strokeStyle = starGlow;
     ctx.fill();
     ctx.stroke()
