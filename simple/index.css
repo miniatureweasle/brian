@@ -1,0 +1,12 @@
+.mountainInteraction{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.interaction{
+  display: absolute;
+  background-color: palegreen;
+}
+
