@@ -1,12 +1,40 @@
-.mountainInteraction{
+
+/* flex-itmes */
+
+.display-flex{
   display: flex;
+}
+
+.direction-column{
+  flex-direction: column;
+}
+
+.justify-center{
   align-items: center;
+}
+
+.align-center{
   justify-content: center;
 }
 
+/* absolute-items */
 
-.interaction{
-  display: absolute;
-  background-color: palegreen;
+.position-absolute{
+  position:absolute;
 }
 
+/* colors! */
+
+.back-color-black{
+  background-color: black;
+}
+
+.color-white{
+  color: white;
+}
+
+/* sizing */
+
+.width-100p{
+width: 100%
+}

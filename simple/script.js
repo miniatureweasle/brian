@@ -19,8 +19,6 @@ var starGlow = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
 starGlow.addColorStop(0, "white");
 // starGlow.addColorStop(1, "gold");
 
-
-
 function star(ctx, x, y, r, p, m)
 {
     ctx.save();
@@ -79,5 +77,18 @@ while(starQuantity != 0){
 
 
 
+const canvasMountain = document.getElementById("mountainRange");
+console.log(canvasMountain)
+canvasMountain.style.backgroundColor = "black";
+//canvasMountain.width =1000;
 
+const ctxM = canvasMountain.getContext('2d');
 
+ctxM.fillStyle="white";
+//txM.fillRect(1,1,300,300)
+
+ctxM.beginPath();
+ctxM.strokeStyle = "white";
+ctxM.moveTo(1, 90);
+ctxM.lineTo(50, 50);
+ctxM.stroke();

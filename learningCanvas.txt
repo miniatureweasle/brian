@@ -1,0 +1,54 @@
+Canvas notes so far.
+
+When creating a canvas first
+you need an html file that contains the canvas elelment with a locating id
+Then you need your js file
+
+const canvas = document.getElementById('CanvasLocatingID') //this is one method of locating it there are many others
+
+with this you can set the context the height and width (Probably more)
+
+the width and height can be set as follows
+
+canvas.width = window.innerHeight
+canvas.height = window.innerWidth
+
+The context of the canvas is set like this, its inportant to make the varaible small since you will use it alot to draw all your images.
+
+ctx = canvas.getContext('2D');
+
+Drawing in blocks
+
+ctx.fillRect(x, y, width, height);
+
+in order to color the above block you can use this.
+
+ctx.fillStyle = 'blue/rgb/hexadecimal';
+
+(Note: this can be specified before each new instance of a fillrect or other drawing function: this will change the color for the block that follows this line of code.)
+
+Drawing lines
+
+when drawings lines or a series of lines you must always begin your code with the following.
+
+ctx.beginPath();
+
+then the starting point for the line
+
+ctx.moveTo(x, y);
+
+for subsiquint lines you can make use of 
+
+ctx.lineTo(x, y);
+
+In order for the above to actually appear on a canvas you have to make use of the following after each instance of drawing
+
+ctx.stroke();
+
+drawing circles and arcs
+
+ctx.arc(x, y, radius, angle of arc in radians, boolean for clockwise or counterclockwise);
+
+(Note: arcs require beginPath() and stroke() just like lines.)
+
+
