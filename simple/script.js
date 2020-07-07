@@ -74,9 +74,6 @@ while(starQuantity != 0){
 }
 
 //ctx.fillRect(2000,100,3,3);
-
-
-
 const canvasMountain = document.getElementById("mountainRange");
 console.log(canvasMountain)
 canvasMountain.style.backgroundColor = "black";
@@ -91,4 +88,10 @@ ctxM.beginPath();
 ctxM.strokeStyle = "white";
 ctxM.moveTo(1, 90);
 ctxM.lineTo(50, 50);
+
+
+
+ctxM.arc();
+
+
 ctxM.stroke();
